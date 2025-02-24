@@ -66,8 +66,6 @@ class ChesapeakeDataset(Dataset):
         """
         return v2.Compose(
             [   
-                #v2.RandomHorizontalFlip(p=0.5),
-                #v2.RandomVerticalFlip(p=0.5),
                 v2.Normalize(mean=mean, std=std),
             ],
         )
